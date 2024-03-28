@@ -1,4 +1,4 @@
-# GitHub language card
+# 💳 GitHub language card
 ![](./profile-card.svg)
 
 This is a profile card made in a SVG, to be imported into a GitHub profile readme (or elsewhere). It works by using a ``foreignObject`` in a SVG.
