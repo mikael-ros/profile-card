@@ -84,8 +84,10 @@
                     position: absolute;
                     left: 23ch;
                     width: 0%;
+                    height: 100%;
                     overflow: hidden;
                     display: flex;
+                    align-items: center;
                     list-style: none;
 
                     animation: .75s linear 1s 1 reveal;
