@@ -299,42 +299,45 @@
                             <li>🤯 Clojure</li>
                         </div>
                         <div class="learning">
-                            <li>⛓️ Haskell</li>
+                            <li>🔗 Haskell</li>
                         </div>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">🔧</span> Other</h4>
                     <ul>
-                    <div class="belowaverage">
+                        <div class="belowaverage">
                             <li>💲 Shell scripting</li>
-                    </div>
-                    <div class="learning">
-                        <li>🦀 Rust</li>
-                    </div>
+                        </div>
+                        <div class="learning">
+                            <li>🦀 Rust</li>
+                        </div>
+                        <div class="accquainted">
+                            <li>🔩 RISC-V Assembly</li>
+                        </div>
                     </ul>
                 </section>
                 <section class="category-container" id="legend">
                     <h4><span class="emoji">🗺️</span> Legend</h4>
                     <ul>
-                    <div class="proficient">
-                        <li>💪 Proficient</li>
-                    </div>
-                    <div class="good">
-                        <li>👍 Good</li>
-                    </div>
-                    <div class="average">
-                        <li>👌 Average</li>
-                    </div>
-                    <div class="belowaverage">
-                        <li>🤏 Below average</li>
-                    </div>
-                    <div class="accquainted">
-                        <li>💡 Accquainted</li>
-                    </div>
-                    <div class="learning">
-                        <li>🧠 Learning</li>
-                    </div>
+                        <div class="proficient">
+                            <li>💪 Proficient</li>
+                        </div>
+                        <div class="good">
+                            <li>👍 Good</li>
+                        </div>
+                        <div class="average">
+                            <li>👌 Average</li>
+                        </div>
+                        <div class="belowaverage">
+                            <li>🤏 Below average</li>
+                        </div>
+                        <div class="accquainted">
+                            <li>💡 Accquainted</li>
+                        </div>
+                        <div class="learning">
+                            <li>🧠 Learning</li>
+                        </div>
                     </ul>
                 </section>
             </article>

@@ -107,8 +107,11 @@ There are 6 colors corresponding to the 6 proficiencies, which you can change ea
 > Note you may need to modify the CSS to accomodate more languages, they just get cut off for now.
 
 > [!TIP]
-> Don't forget to change the SVG height and width at the top of the file, or it might either be too large or get cut off.
+> Don't forget to change the SVG height and width at the top of the file, or it might either be too large or get cut off. Also set the ``language-card`` height.
 
 ## 🫡 Acknowledgements
 > [!IMPORTANT]
 > While making this, I used [this CSS animation](https://codepen.io/alvaromontoro/pen/rNwVpdd) as reference, and [this guide](https://css-tricks.com/snippets/css/typewriter-effect/). Otherwise **everything else is my own work.** This repository is licensed under the [MIT license](LICENSE), please accquaint yourself with it before using this code.
+
+---
+> This repository is updated in conjunction with my profile, mainly so it is easier to maintain. Not every commit is therefore relevant functionality - some are simply me updating my profile.
