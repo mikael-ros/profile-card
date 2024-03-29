@@ -78,6 +78,7 @@
                     background-color: rgba(var(--shadow),0.8);
                     border-radius: 50%;
                     text-align: center;
+                    padding-top: .125em;
                 }
 
                 ul {
