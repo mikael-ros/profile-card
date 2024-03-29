@@ -11,6 +11,24 @@ To use the card, either copy the contents of [``profile-card.svg``](./profile-ca
 ### How to modify
 Simply go into the SVG and add entries accordingly. There are 6 categories, all identified by ids; see the SVG as an example.
 
+```html
+<section class="category-container">
+    <h4><span class="emoji">🌐</span> Web development</h4>
+    <ul>
+        <div class="proficient">
+            <li>🖥️ HTML</li>
+            <li>👔 CSS</li>
+        </div>
+        <div class="good">
+            <li>🤖 JavaScript</li>
+        </div>
+        <div class="learning">
+            <li>#️⃣ TypeScript</li>
+        </div>
+    </ul>
+</section>
+```
+
 Note you may need to modify the CSS to accomodate more languages.
 
 ### Quirks
