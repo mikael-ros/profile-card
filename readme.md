@@ -103,5 +103,5 @@ There are 6 colors corresponding to the 6 proficiencies, which you can change ea
 > Don't forget to change the SVG height and width at the top of the file, or it might either be too large or get cut off.
 
 ## 🫡 Acknowledgements
-> [!INFO]
+> [!IMPORTANT]
 > While making this, I used [this CSS animation](https://codepen.io/alvaromontoro/pen/rNwVpdd) as reference, and [this guide](https://css-tricks.com/snippets/css/typewriter-effect/). Otherwise everything else is my own work.
