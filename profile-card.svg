@@ -86,7 +86,7 @@
 
                 ul {
                     position: absolute;
-                    left: 300px;
+                    left: 23ch;
                     width: 0%;
                     overflow: hidden;
                     display: flex;
@@ -140,7 +140,7 @@
                 }
 
                 #legend ul{
-                    left: 150px;
+                    left: 15ch;
                 }
 
                 #legend li{
