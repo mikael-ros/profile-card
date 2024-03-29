@@ -11,22 +11,47 @@ To use the card, either copy the contents of [``profile-card.svg``](./profile-ca
 ### How to modify
 Simply go into the SVG and add entries accordingly. There are 6 categories, all identified by ids; see the SVG as an example.
 
+#### Minimal example
+> [!NOTE]
+> This does not include the rest of the SVG, you also need the headings and style. See the SVG file.
 ```html
-<section class="category-container">
-    <h4><span class="emoji">🌐</span> Web development</h4>
-    <ul>
+<article id="language-card">
+    <section class="category-container">
+        <h4><span class="emoji">🔵</span> Category</h4>
+        <ul>
+            <div class="proficient">
+                <li>🦝 Racoon.js</li>
+            </div>
+            <div class="learning">
+                <li>💅 Girlboss</li>
+            </div>
+        </ul>
+    </section>
+
+    <section class="category-container" id="legend">
+        <h4><span class="emoji">🗺️</span> Legend</h4>
+        <ul>
         <div class="proficient">
-            <li>🖥️ HTML</li>
-            <li>👔 CSS</li>
+            <li>💪 Proficient</li>
         </div>
         <div class="good">
-            <li>🤖 JavaScript</li>
+            <li>👍 Good</li>
+        </div>
+        <div class="average">
+            <li>👌 Average</li>
+        </div>
+        <div class="belowaverage">
+            <li>🤏 Below average</li>
+        </div>
+        <div class="accquainted">
+            <li>💡 Accquainted</li>
         </div>
         <div class="learning">
-            <li>#️⃣ TypeScript</li>
+            <li>🧠 Learning</li>
         </div>
-    </ul>
-</section>
+        </ul>
+    </section>
+</article>
 ```
 
 Note you may need to modify the CSS to accomodate more languages.
