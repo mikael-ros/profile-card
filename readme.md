@@ -9,13 +9,13 @@ This is a profile card made in a SVG, that can be imported into a GitHub profile
 To use the card, either copy the contents of [``profile-card.svg``](./profile-card.svg) or download it. Then paste it into your profile git repository, and add an image tag in your profile readme, displaying the SVG, like this: ``![](path/to/profile-card.svg)``. The path can also be to the raw file, if hosted in a seperate repository.
 
 ### 🪚 How to modify
-Simply go into the SVG and add entries accordingly. There are 6 categories, all identified by ids; see the SVG as an example.
+Simply go into the SVG and add entries accordingly. There are 6 proficiencies, all identified by ids; see the SVG as an example.
 
 #### 📁 Card
 The entire thing is contained within an ``<article>`` tag, which is necessary to make it display properly on all GitHub themes. See the minimal example further down.
 
 #### ⌨️ Typing animation
-The typing animation is **implemented with keyframes**, changing the content each keyframe. You can with some effort change this text. _If your text is the same length or shorter you'll have to do less editing._
+The typing animation is **implemented with keyframes**, changing the content each keyframe. You can with some effort change this text. _If your text is the same length or shorter you can get away with less editing._
 
 > [!TIP]
 > Divide 100% by the amount of letters you want to type and increment the keyframe by that. You can experiment a lot with this though.
