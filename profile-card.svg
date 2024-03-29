@@ -119,8 +119,12 @@
                     background-color: rgba(var(--shadow),0.5);
                 }
 
+                .category-container *{
+                    vertical-align: middle;
+                }
+
                 .category-container:last-of-type{
-                    margin: 0;
+                    margin-botom: 0;
                 }
 
                 #legend{
