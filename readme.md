@@ -111,4 +111,4 @@ There are 6 colors corresponding to the 6 proficiencies, which you can change ea
 
 ## 🫡 Acknowledgements
 > [!IMPORTANT]
-> While making this, I used [this CSS animation](https://codepen.io/alvaromontoro/pen/rNwVpdd) as reference, and [this guide](https://css-tricks.com/snippets/css/typewriter-effect/). Otherwise everything else is my own work.
+> While making this, I used [this CSS animation](https://codepen.io/alvaromontoro/pen/rNwVpdd) as reference, and [this guide](https://css-tricks.com/snippets/css/typewriter-effect/). Otherwise **everything else is my own work.** This repository is licensed under the [MIT license](LICENSE), please accquaint yourself with it before using this code.
