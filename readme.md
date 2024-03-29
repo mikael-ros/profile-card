@@ -14,6 +14,13 @@ Simply go into the SVG and add entries accordingly. There are 6 categories, all 
 #### 📁 Card
 The entire thing is contained within an ``<article>`` tag, which is necessary to make it display properly on all GitHub themes. See the minimal example further down.
 
+#### ⌨️ Typing animation
+The typing animation is **implemented with keyframes**, changing the content each keyframe. You can with some effort change this text. _If your text is the same length or shorter you'll have to do less editing._
+
+> [!TIP]
+> Divide 100% by the amount of letters you want to type and increment the keyframe by that. You can experiment a lot with this though.
+> Also see [this code example](https://codepen.io/alvaromontoro/pen/rNwVpdd) if you want to change the type of typing marker. Default is ``_``.
+
 #### 🗂 Categories
 Every category is contained in it's own ``<section class="category-container"``, containing a ``<h4>`` element and an ``<ul>`` element.
 
