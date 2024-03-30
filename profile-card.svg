@@ -108,7 +108,7 @@
                     color: var(--text-color-negative);
                     text-wrap: nowrap;
                     overflow: hidden;
-                    font-size: 0.65em;
+                    font-size: 0.8em;
                     opacity: 0.8;
                 }
                 
