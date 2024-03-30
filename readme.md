@@ -91,9 +91,26 @@ There are 6 colors corresponding to the 6 proficiencies, which you can change ea
 > [!TIP]
 > Don't forget to change the SVG height and width at the top of the file, or it might either be too large or get cut off. Also set the ``language-card`` height.
 
+---
+
+## 👥️ Contributing
+
+Feel free to contribute, though I would prefer you not change the contents of the list in this repository as the SVG hosted here is used on my profile.
+
+---
+
+## 👋 Attributing
+
+While it is not necessary, **I would be happy if you referred** to this repo when using the card. I would also love to see what you create with it!
+
+> [!IMPORTANT]
+> This repository is licensed under the [MIT license](LICENSE), please accquaint yourself with it before using this code.
+
+---
+
 ## 🫡 Acknowledgements
 > [!IMPORTANT]
-> While making the typing animation, I used [this CSS animation](https://codepen.io/alvaromontoro/pen/rNwVpdd) and [this guide](https://css-tricks.com/snippets/css/typewriter-effect/), for reference - though it has since strayed from those roots. Otherwise **everything else is my own work.** This repository is licensed under the [MIT license](LICENSE), please accquaint yourself with it before using this code.
+> While making the typing animation, I used [this CSS animation](https://codepen.io/alvaromontoro/pen/rNwVpdd) and [this guide](https://css-tricks.com/snippets/css/typewriter-effect/), for reference - though it has since strayed from those roots. Otherwise **everything else is my own work.** 
 
 ---
 > This repository is updated in conjunction with my profile, mainly so it is easier to maintain. Not every commit is therefore relevant functionality - some are simply me updating my profile.
