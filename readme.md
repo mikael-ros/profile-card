@@ -55,6 +55,9 @@ These are marked by wrapping the corresponding skill in an ``<li>`` element with
 ```html
 <li class="proficient">🦝 Racoon.js</li>
 ```
+> [!TIP]
+> As of v3, the card can now wrap lists, meaning you can add as many skills as you want. _Don't forget to set the SVG size, though_
+
 ##### 🖌 Colors
 There are 6 colors corresponding to the 6 proficiencies, which you can change easily by editing CSS variables at the top of the SVG. 
 
@@ -90,7 +93,7 @@ There are 6 colors corresponding to the 6 proficiencies, which you can change ea
 
 ## 🫡 Acknowledgements
 > [!IMPORTANT]
-> While making this, I used [this CSS animation](https://codepen.io/alvaromontoro/pen/rNwVpdd) as reference, and [this guide](https://css-tricks.com/snippets/css/typewriter-effect/). Otherwise **everything else is my own work.** This repository is licensed under the [MIT license](LICENSE), please accquaint yourself with it before using this code.
+> While making the typing animation, I used [this CSS animation](https://codepen.io/alvaromontoro/pen/rNwVpdd) and [this guide](https://css-tricks.com/snippets/css/typewriter-effect/), for reference - though it has since strayed from those roots. Otherwise **everything else is my own work.** This repository is licensed under the [MIT license](LICENSE), please accquaint yourself with it before using this code.
 
 ---
 > This repository is updated in conjunction with my profile, mainly so it is easier to maintain. Not every commit is therefore relevant functionality - some are simply me updating my profile.
