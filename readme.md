@@ -11,6 +11,9 @@ To use the card, either copy the contents of [``profile-card.svg``](./profile-ca
 ### 🪚 How to modify
 Simply go into the SVG and add entries accordingly. There are 6 proficiencies, all identified by ids; see the SVG as an example.
 
+> [!TIP]
+> When editing the SVG, open the file locally in the browser. It is a more accurate preview of how it will look in the real world.
+
 #### 📁 Card
 The entire thing is contained within an ``<article>`` tag, which is necessary to make it display properly on all GitHub themes. See the minimal example further down.
 
@@ -28,12 +31,8 @@ Every category is contained in it's own ``<section class="category-container"``,
 <section class="category-container">
     <h4><span class="emoji">🔵</span> Category</h4>
     <ul>
-        <div class="proficient">
-            <li>🦝 Racoon.js</li>
-        </div>
-        <div class="learning">
-            <li>💅 Girlboss</li>
-        </div>
+        <li class="proficient">🦝 Racoon.js</li>
+        <li class="learning">💅 Girlboss</li>
     </ul>
 </section>
 ```
@@ -52,11 +51,9 @@ There are 6 levels built-in. They are as follows:
 - 💡 ``accquainted``: You have come across and had to use this language as part of a course or similar, but didn't get the hang of it. Despite, **you can still write a couple lines and read the syntax**
 - 🧠 ``learning``: What it **says on the tin**
 
-These are marked by wrapping the corresponding ``<li>`` elements in a ``<div>`` with the class set to one of the above, like:
+These are marked by wrapping the corresponding skill in an ``<li>`` element with the class set to one of the above, like:
 ```html
-<div class="proficient">
-    <li>🦝 Racoon.js</li>
-</div>
+<li class="proficient">🦝 Racoon.js</li>
 ```
 ##### 🖌 Colors
 There are 6 colors corresponding to the 6 proficiencies, which you can change easily by editing CSS variables at the top of the SVG. 
@@ -69,42 +66,24 @@ There are 6 colors corresponding to the 6 proficiencies, which you can change ea
     <section class="category-container">
         <h4><span class="emoji">🔵</span> Category</h4>
         <ul>
-            <div class="proficient">
-                <li>🦝 Racoon.js</li>
-            </div>
-            <div class="learning">
-                <li>💅 Girlboss</li>
-            </div>
+            <li class="proficient">🦝 Racoon.js</li>
+            <li class="learning">💅 Girlboss</li>
         </ul>
     </section>
 
     <section class="category-container" id="legend">
         <h4><span class="emoji">🗺️</span> Legend</h4>
         <ul>
-        <div class="proficient">
-            <li>💪 Proficient</li>
-        </div>
-        <div class="good">
-            <li>👍 Good</li>
-        </div>
-        <div class="average">
-            <li>👌 Average</li>
-        </div>
-        <div class="belowaverage">
-            <li>🤏 Below average</li>
-        </div>
-        <div class="accquainted">
-            <li>💡 Accquainted</li>
-        </div>
-        <div class="learning">
-            <li>🧠 Learning</li>
-        </div>
+            <li class="proficient">💪 Proficient</li>
+            <li class="good">👍 Good</li>
+            <li class="average">👌 Average</li>
+            <li class="belowaverage">🤏 Below average</li>
+            <li class="accquainted">💡 Accquainted</li>
+            <li class="learning">🧠 Learning</li>
         </ul>
     </section>
 </article>
 ```
-> [!NOTE]
-> Note you may need to modify the CSS to accomodate more languages, they just get cut off for now.
 
 > [!TIP]
 > Don't forget to change the SVG height and width at the top of the file, or it might either be too large or get cut off. Also set the ``language-card`` height.
