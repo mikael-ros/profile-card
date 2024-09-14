@@ -250,7 +250,7 @@
                         <li class="proficient">🖥️ HTML</li>
                         <li class="proficient">👔 CSS</li>
                         <li class="good">🤖 JavaScript</li>
-                        <li class="learning">#️⃣ TypeScript</li>
+                        <li class="good">#️⃣ TypeScript</li>
                     </ul>
                 </section>
                 <section class="category-container">
@@ -264,18 +264,18 @@
                     <h4><span class="emoji">➕</span> Math/Functional</h4>
                     <ul>
                         <li class="good">✖️ KaTeX</li>
+                        <li class="average">🔗 Haskell</li>
                         <li class="belowaverage">🟰 R</li>
                         <li class="belowaverage">🐍 Python</li>
                         <li class="accquainted">🤯 Clojure</li>
-                        <li class="learning">🔗 Haskell</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">🔧</span> Other</h4>
                     <ul>
                         <li class="belowaverage">💲 Shell scripting</li>
-                        <li class="learning">🦀 Rust</li>
                         <li class="accquainted">🔩 RISC-V Assembly</li>
+                        <li class="learning">🦀 Rust</li>
                     </ul>
                 </section>
                 <section class="category-container" id="legend">
