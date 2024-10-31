@@ -20,8 +20,16 @@
                     --light-shadow: #444;
                     --text-shadow: #555;
 
-                    --border-radius-mild: 1rem;
+                    --low-opacity: 0.25;
+                    --medium-opacity: 0.5;
+                    --high-opacity: 0.75;
+                    --full-opacity: 1;
+
+                    --border-radius-verymild: calc(var(--border-radius) / 4);
+                    --border-radius-mild: calc(var(--border-radius) / 2);
                     --border-radius: 2rem;
+
+                    --character-limit: 20ch;
 
                     /* Relative to the current size of the readme */
                     font-size: 1.5em;
@@ -29,22 +37,33 @@
                     color: var(--text-color);
                 }
 
-                * {
+                *, *::after, *::before {
                     box-sizing: border-box;
                     margin: 0;
                     padding: 0;
                 }
 
+                /* The containing card */
                 #language-card{
-                    width: 100%;
-               
-                    padding: .5rem;
-                    background-color: rgba(var(--shadow),0.5);
-                    border-radius: var(--border-radius-mild);
-                    animation: 1s flash 0s linear;
-                }
+                    display: flex;
+                    flex-direction: column;
+                    gap: calc(var(--radius) / 2);
 
-                h3 {
+                    width: 100%;
+                    height: 100%;
+
+                    background-color: rgba(var(--shadow),var(--medium-opacity));
+                    animation: 1s flash 0s linear;
+
+                    --radius: var(--border-radius-mild);
+                    border-radius: var(--radius);
+                    padding: calc(var(--radius) / 2);
+                }
+                
+                /* * * * * * * */
+                /* Typewriter  */
+                /* * * * * * * */
+                #typewriter {
                     color: var(--text-color-negative);
                     overflow: hidden;
                     text-wrap: nowrap;
@@ -52,99 +71,19 @@
 
                 #typewriter::before {
                     content: "";
-                    background-color: rgba(0,0,0,0);
+                    background-color: transparent;
                     animation: typing-speak, typing-write, typing-know, typing-speak;
                     animation-duration: 10s, 10s, 10s, 10s;
                     animation-delay: .5s, 7s, 14s, 24s;
                     animation-iteration-count: 1, 1, 1, infinite;
                 }
 
-                h3 p{
-                    display: inline-block;
+                /* The inner text */
+                #typewriter p{                
                     width: 1ch;
-                    margin-bottom: 0;
-                    margin-left: .1em;
+
                     border-bottom: solid .2em var(--text-color-negative);
                     animation: .75s blink-caret 1s step-end infinite;
-                }
-
-                h4 {
-                    margin-left: .125em;
-                    width: 23ch;
-                    color: var(--text-color-negative);
-                    font-weight: 600;
-                    text-wrap: nowrap;
-                    line-height: 200%;
-                }
-
-                .emoji {
-                    display: inline-block;
-                    margin: 0 .5em 0 0;
-                    height: 1.5em;
-                    width: 1.5em;
-                    line-height: 1.5em;
-                    background-color: rgba(var(--shadow),0.8);
-                    border-radius: 50%;
-                    text-align: center
-                }
-
-                ul {
-                    width: calc(100% - 23ch - 2em);
-                    overflow: hidden;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    list-style: none;
-                    opacity: 0;
-                    
-                    animation: .75s linear .75s 1 reveal;
-                    animation-fill-mode: forwards;
-                }
-
-                li{
-                    margin: .125rem;
-                    padding: .25rem .5em .125rem .5em;
-                    border-radius: var(--border-radius-mild);
-                    color: var(--text-color-negative);
-                    text-wrap: nowrap;
-                    overflow: hidden;
-                    font-size: 0.8em;
-                    opacity: 0.8;
-                }
-                
-                .category-container{
-                    width: 100%;
-                    min-height: 2rem;
-                    margin: .35rem 0;
-                    padding: .125rem;
-                    display: flex;
-                    align-items: center;
-                    border-radius: var(--border-radius-mild);
-                    background-color: rgba(var(--shadow),0.5);
-                }
-
-                #legend{
-                    min-height: 1.5rem;
-                    max-height: 1.5rem;
-                    width: 100%;
-                    margin-top: 1rem;
-                    font-size: .75rem;
-                    background-color: rgba(var(--highlight),0.2);
-                }
-
-                #legend .emoji{
-                    width: 1.5em;
-                    height: 1.5em;
-                    line-height: 1.5em;
-                    background-color: rgba(var(--highlight),0.2);
-                }
-
-                #legend ul{
-                    left: 15ch;
-                }
-
-                #legend li{
-                    margin: 0.25em;
                 }
 
                 @keyframes reveal{
@@ -164,7 +103,7 @@
                 
                 /* Inspired by https://codepen.io/alvaromontoro/pen/rNwVpdd */
                 @keyframes typing-speak {
-                    00.00%, 65.00% { content: ""; background-color: rgba(0,0,0,0)}
+                    00.00%, 65.00% { content: ""; background-color: transparent}
                     06.25%, 63.00% { content: "I"; }
                     12.50%, 61.00% { content: "I "; }
                     18.75%, 59.00% { content: "I s"; }
@@ -200,6 +139,102 @@
                 }
 
                 /* * * * * * * * * * * */
+                /* Category containers */
+                /* * * * * * * * * * * */
+
+                .category-container{
+                    width: 100%;
+                    min-height: 2rem;
+
+                    display: flex;
+                    align-items: center;
+
+                    --radius: var(--border-radius-mild);
+                    border-radius: var(--radius);
+                    padding: calc(var(--radius) / 4);
+
+                    background-color: rgba(var(--shadow),var(--medium-opacity));
+                }
+
+                /* Category containers */
+                .category-container h4 {
+                    display: flex;
+                    align-items: center;
+                    gap: calc(var(--radius) / 4);
+
+                    flex-basis: var(--character-limit); /* Needs to be changed if supporting more characters */
+
+                    color: var(--text-color-negative);
+                    font-weight: 600;
+                    text-wrap: nowrap;
+                }
+
+                /* The emoji in each category */
+                .category-container .emoji {
+                    --size: 1.5rem;
+
+                    height: var(--size);
+                    width: var(--size);
+                    line-height: var(--size); /* Center vertically */
+                    text-align: center; /* Center horizontally */
+                    
+                    background-color: rgba(var(--shadow),var(--high-opacity));
+                    border-radius: calc(var(--size) / 2); /* Perfectly round */
+                }
+
+                /* * * * * * * */
+                /* Skills list */
+                /* * * * * * * */
+
+                /* The list of skills */
+                .skill-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+
+                    --spacing: calc(var(--radius) / 4);
+                    padding: 0 var(--spacing);
+                    gap: var(--spacing);;
+
+                    list-style: none;
+
+                    opacity: 0;
+                    animation: .75s linear .75s 1 reveal;
+                    animation-fill-mode: forwards;
+                }
+
+                .skill-list li{
+                    color: var(--text-color-negative);
+                    text-wrap: nowrap;
+                    overflow: hidden;
+
+                    font-size: 0.8em;
+                    opacity: var(--high-opacity);
+
+                    --radius: var(--border-radius-verymild);
+                    padding: calc(var(--radius) / 2) calc(var(--radius));
+                    border-radius: var(--border-radius-mild);
+                }
+                
+                /* * * * * */
+                /* Legend  */
+                /* * * * * */
+
+                #legend{
+                    justify-content: space-between;
+                    height: 1.5rem;
+
+                    width: 100%;
+
+                    font-size: .75rem;
+                    background-color: rgba(var(--highlight), var(--low-opacity));
+                }
+
+                #legend .emoji{
+                    background-color: rgba(var(--highlight), var(--low-opacity));
+                }
+
+                /* * * * * * * * * * * */
                 /* Proficiency classes */
                 /* * * * * * * * * * * */
 
@@ -228,25 +263,25 @@
                 }
             </style>
 
-            <article id="language-card">
+            <figure id="language-card">
                 <h3>💬 <span id="typewriter"></span><p></p></h3>
                 <section class="category-container">
                     <h4><span class="emoji">🐵</span> Human readable</h4>
-                    <ul>
+                    <ul class="skill-list">
                         <li class="proficient">🇸🇪 Swedish</li>
                         <li class="proficient">🇬🇧 English</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">📦</span> Object oriented</h4>
-                    <ul>
+                    <ul class="skill-list">
                         <li class="proficient">☕ Java</li>
                         <li class="proficient">❤️ Scala</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">🌐</span> Web development</h4>
-                    <ul>
+                    <ul class="skill-list">
                         <li class="proficient">🖥️ HTML</li>
                         <li class="proficient">👔 CSS</li>
                         <li class="good">🤖 JavaScript</li>
@@ -255,14 +290,14 @@
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">✏️</span> Writing</h4>
-                    <ul>
+                    <ul class="skill-list">
                         <li class="proficient">📝 Markdown</li>
                         <li class="average">📄 LaTeX</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">➕</span> Math/Functional</h4>
-                    <ul>
+                    <ul class="skill-list">
                         <li class="good">✖️ KaTeX</li>
                         <li class="average">🔗 Haskell</li>
                         <li class="belowaverage">🟰 R</li>
@@ -272,7 +307,7 @@
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">🔧</span> Other</h4>
-                    <ul>
+                    <ul class="skill-list">
                         <li class="belowaverage">💲 Shell scripting</li>
                         <li class="accquainted">🔩 RISC-V Assembly</li>
                         <li class="learning">🦀 Rust</li>
@@ -280,7 +315,7 @@
                 </section>
                 <section class="category-container" id="legend">
                     <h4><span class="emoji">🗺️</span> Legend</h4>
-                    <ul>
+                    <ul class="skill-list">
                         <li class="proficient">💪 Proficient</li>
                         <li class="good">👍 Good</li>
                         <li class="average">👌 Average</li>
@@ -289,7 +324,7 @@
                         <li class="learning">🧠 Learning</li>
                     </ul>
                 </section>
-            </article>
+            </figure>
         </div>
     </foreignObject>
 </svg>
