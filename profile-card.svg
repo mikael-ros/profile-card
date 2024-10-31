@@ -143,8 +143,9 @@
                 /* * * * * * * * * * * */
 
                 .category-container{
+                    --_height: var(--height, 2rem);
                     width: 100%;
-                    min-height: 2rem;
+                    min-height: var(--_height);
 
                     display: flex;
                     align-items: center;
@@ -171,7 +172,8 @@
 
                 /* The emoji in each category */
                 .category-container .emoji {
-                    --size: 1.5rem;
+                    --size: calc(0.75 * var(--_height));
+                    font-size: calc(var(--size) / 2); 
 
                     height: var(--size);
                     width: var(--size);
@@ -194,7 +196,7 @@
 
                     --spacing: calc(var(--radius) / 4);
                     padding: 0 var(--spacing);
-                    gap: var(--spacing);;
+                    gap: var(--spacing);
 
                     list-style: none;
 
@@ -221,13 +223,16 @@
                 /* * * * * */
 
                 #legend{
+                    --height: 1.5rem;
                     justify-content: space-between;
-                    height: 1.5rem;
-
-                    width: 100%;
 
                     font-size: .75rem;
+                    
                     background-color: rgba(var(--highlight), var(--low-opacity));
+                }
+
+                #legend h4, #legend li {
+                    color: rgba(var(--highlight), var(--high-opacity));
                 }
 
                 #legend .emoji{
