@@ -8,7 +8,7 @@ Also check out the [tool-card](https://github.com/mikael-ros/tool-card) I also m
 ---
 
 ## 🔨 Usage
-To use the card, either copy the contents of [``profile-card.svg``](./profile-card.svg) or download it. Then paste it into your profile git repository, and add an image tag in your profile readme, displaying the SVG, like this: ``![](path/to/profile-card.svg)``. The path can also be to the raw file, if hosted in a seperate repository.
+To use the card, either copy the contents of [``profile-card.svg``](./profile-card.svg) or download it. Then paste it into your profile git repository, and add an image tag in your profile readme, displaying the SVG, like this: ``![Profile card](path/to/profile-card.svg)``. The path can also be to the raw file, if hosted in a seperate repository.
 
 ### 🪚 How to modify
 Simply go into the SVG and add entries accordingly. There are 6 proficiencies, all identified by ids; see the SVG as an example.
@@ -17,7 +17,7 @@ Simply go into the SVG and add entries accordingly. There are 6 proficiencies, a
 > When editing the SVG, open the file locally in the browser. It is a more accurate preview of how it will look in the real world.
 
 #### 📁 Card
-The entire thing is contained within an ``<article>`` tag, which is necessary to make it display properly on all GitHub themes. See the minimal example further down.
+The entire thing is contained within an ``<figure>`` tag, which is necessary to make it display properly on all GitHub themes. See the minimal example further down.
 
 #### ⌨️ Typing animation
 The typing animation is **implemented with keyframes**, changing the content each keyframe. You can with some effort change this text. _If your text is the same length or shorter you can get away with less editing._
@@ -104,6 +104,11 @@ Feel free to contribute, though I would prefer you not change the contents of th
 ## 👋 Attributing
 
 While it is not necessary, **I would be happy if you referred** to this repo when using the card. I would also love to see what you create with it!
+
+One way to do so is by making the image itself a link, like:
+```markdown
+    [![Profile card, by mikael-ros](<path to your profile card>)](https://github.com/mikael-ros/profile-card)
+```
 
 > [!IMPORTANT]
 > This repository is licensed under the [MIT license](LICENSE), please accquaint yourself with it before using this code.
