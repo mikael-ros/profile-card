@@ -47,10 +47,11 @@
                 #language-card{
                     display: flex;
                     flex-direction: column;
-                    gap: calc(var(--radius) / 2);
+                    --gap: calc(var(--radius) / 2);
+                    margin-bottom: calc(-1*var(--gap));
 
                     width: 100%;
-                    height: 100%;
+                    height: fit-content;
 
                     background-color: rgba(var(--shadow),var(--medium-opacity));
                     animation: 1s flash 0s linear;
@@ -58,6 +59,21 @@
                     --radius: var(--border-radius-mild);
                     border-radius: var(--radius);
                     padding: calc(var(--radius) / 2);
+                }
+
+                #language-card > * {
+                    margin-bottom: var(--gap); 
+                }
+
+                @supports ((aspect-ratio: 1 / 1) and (gap: 0)) { /* Devices that support gap */
+                    #language-card {
+                        gap: var(--gap);
+                        margin: 0;
+                    }
+
+                    #language-card > * {
+                        margin: 0;
+                    }
                 }
                 
                 /* * * * * * * */
@@ -161,13 +177,29 @@
                 .category-container h4 {
                     display: flex;
                     align-items: center;
-                    gap: calc(var(--radius) / 4);
+                    --gap: calc(var(--radius) / 4);
+                    margin-right: calc(-1*var(--gap));
 
                     flex-basis: var(--character-limit); /* Needs to be changed if supporting more characters */
 
                     color: var(--text-color-negative);
                     font-weight: 600;
                     text-wrap: nowrap;
+                }
+
+                .category-container h4 > * {
+                    margin-right: var(--gap); 
+                }
+
+                @supports ((aspect-ratio: 1 / 1) and (gap: 0)) { /* Devices that support gap */
+                    .category-container h4 {
+                        gap: var(--gap);
+                        margin: 0;
+                    }
+
+                    .category-container h4 > * {
+                        margin: 0;
+                    }
                 }
 
                 /* The emoji in each category */
@@ -196,13 +228,28 @@
 
                     --spacing: calc(var(--radius) / 4);
                     padding: 0 var(--spacing);
-                    gap: var(--spacing);
+                    margin: 0 calc(-1*var(--spacing)) calc(-1*var(--spacing)) 0;
 
                     list-style: none;
 
                     opacity: 0;
                     animation: .75s linear .75s 1 reveal;
                     animation-fill-mode: forwards;
+                }
+
+                .skill-list > * {
+                    margin: 0 var(--spacing) var(--spacing) 0;
+                }
+                
+                @supports ((aspect-ratio: 1 / 1) and (gap: 0)) { /* Devices that support gap */
+                    .skill-list {
+                        gap: var(--spacing);
+                        margin: 0;
+                    }
+
+                    .skill-list > * {
+                        margin: 0;
+                    }
                 }
 
                 .skill-list li{
