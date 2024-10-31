@@ -1,9 +1,9 @@
 # 🪪 GitHub Language Card
 ![](./profile-card.svg)
 
-This is a profile card made in a SVG, that can be imported into a GitHub profile readme (or elsewhere). It works by using a ``foreignObject`` inside of an SVG, which allows you to use HTML and CSS beyond what the GitHub sanitization process allows.
+This is a profile card made inside of a SVG, that can be imported into a GitHub profile readme (or elsewhere). It works by using a ``foreignObject`` inside of an SVG, which allows you to use HTML and CSS beyond what the GitHub sanitization process allows.
 
-Also check out the [tool-card](https://github.com/mikael-ros/tool-card) I also made :)
+<a href='https://ko-fi.com/Z8Z212GZR6' target='_blank'><img height='60' style='border:0px;height:60px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 ---
 
@@ -92,12 +92,6 @@ There are 6 colors corresponding to the 6 proficiencies, which you can change ea
 
 > [!TIP]
 > Don't forget to change the SVG height and width at the top of the file, or it might either be too large or get cut off. Also set the ``language-card`` height.
-
----
-
-## 👥️ Contributing
-
-Feel free to contribute, though I would prefer you not change the contents of the list in this repository as the SVG hosted here is used on my profile.
 
 ---
 
