@@ -32,7 +32,7 @@ Every category is contained in it's own ``<section class="category-container"``,
 ```html
 <section class="category-container">
     <h4><span class="emoji">🔵</span> Category</h4>
-    <ul>
+    <ul class="skill-list">
         <li class="proficient">🦝 Racoon.js</li>
         <li class="learning">💅 Girlboss</li>
     </ul>
