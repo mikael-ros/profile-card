@@ -67,10 +67,10 @@ There are 6 colors corresponding to the 6 proficiencies, which you can change ea
 > [!NOTE]
 > This does not include the rest of the SVG, you also need the headings and style. See the SVG file.
 ```html
-<article id="language-card">
+<figure id="language-card">
     <section class="category-container">
         <h4><span class="emoji">🔵</span> Category</h4>
-        <ul>
+        <ul class="skill-list">
             <li class="proficient">🦝 Racoon.js</li>
             <li class="learning">💅 Girlboss</li>
         </ul>
@@ -78,7 +78,7 @@ There are 6 colors corresponding to the 6 proficiencies, which you can change ea
 
     <section class="category-container" id="legend">
         <h4><span class="emoji">🗺️</span> Legend</h4>
-        <ul>
+        <ul class="skill-list">
             <li class="proficient">💪 Proficient</li>
             <li class="good">👍 Good</li>
             <li class="average">👌 Average</li>
@@ -87,7 +87,7 @@ There are 6 colors corresponding to the 6 proficiencies, which you can change ea
             <li class="learning">🧠 Learning</li>
         </ul>
     </section>
-</article>
+</figure>
 ```
 
 > [!TIP]
