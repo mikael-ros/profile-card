@@ -33,8 +33,8 @@ Every category is contained in it's own ``<section class="category-container"``,
 <section class="category-container">
     <h4><span class="emoji">🔵</span> Category</h4>
     <ul class="skill-list">
-        <li class="proficient">🦝 Racoon.js</li>
-        <li class="learning">💅 Girlboss</li>
+        <li level="proficient">🦝 Racoon.js</li>
+        <li level="learning">💅 Girlboss</li>
     </ul>
 </section>
 ```
@@ -53,9 +53,9 @@ There are 6 levels built-in. They are as follows:
 - 💡 ``accquainted``: You have come across and had to use this language as part of a course or similar, but didn't get the hang of it. Despite, **you can still write a couple lines and read the syntax**
 - 🧠 ``learning``: What it **says on the tin**
 
-These are marked by wrapping the corresponding skill in an ``<li>`` element with the class set to one of the above, like:
+These are marked by wrapping the corresponding skill in an ``<li>`` element with the ``level`` set to one of the above, like:
 ```html
-<li class="proficient">🦝 Racoon.js</li>
+<li level="proficient">🦝 Racoon.js</li>
 ```
 > [!TIP]
 > As of v3, the card can now wrap lists, meaning you can add as many skills as you want. _Don't forget to set the SVG size, though_
@@ -71,20 +71,20 @@ There are 6 colors corresponding to the 6 proficiencies, which you can change ea
     <section class="category-container">
         <h4><span class="emoji">🔵</span> Category</h4>
         <ul class="skill-list">
-            <li class="proficient">🦝 Racoon.js</li>
-            <li class="learning">💅 Girlboss</li>
+            <li level="proficient">🦝 Racoon.js</li>
+            <li level="learning">💅 Girlboss</li>
         </ul>
     </section>
 
     <section class="category-container" id="legend">
         <h4><span class="emoji">🗺️</span> Legend</h4>
         <ul class="skill-list">
-            <li class="proficient">💪 Proficient</li>
-            <li class="good">👍 Good</li>
-            <li class="average">👌 Average</li>
-            <li class="belowaverage">🤏 Below average</li>
-            <li class="accquainted">💡 Accquainted</li>
-            <li class="learning">🧠 Learning</li>
+            <li level="proficient">💪 Proficient</li>
+            <li level="good">👍 Good</li>
+            <li level="average">👌 Average</li>
+            <li level="belowaverage">🤏 Below average</li>
+            <li level="accquainted">💡 Accquainted</li>
+            <li level="learning">🧠 Learning</li>
         </ul>
     </section>
 </figure>
