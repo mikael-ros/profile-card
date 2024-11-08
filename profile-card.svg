@@ -178,6 +178,7 @@
                     align-items: center;
                     --gap: calc(var(--radius) / 4);
                     margin-right: calc(-1*var(--gap));
+                    padding-left: calc(0.25*var(--gap));
 
                     flex-basis: var(--character-limit); /* Needs to be changed if supporting more characters */
 
@@ -256,8 +257,13 @@
                     text-wrap: nowrap;
                     overflow: hidden;
 
+                    --font-size: 0.8em;
                     font-size: 0.8em;
                     opacity: var(--high-opacity);
+
+                    --line-height: 1.25;
+                    line-height: var(--line-height);
+                    min-height: calc(var(--line-height) * var(--font-size));
 
                     --radius: var(--border-radius-verymild);
                     padding: calc(var(--radius) / 2) calc(var(--radius));
@@ -270,15 +276,14 @@
 
                 #legend{
                     --height: 1.5rem;
-                    justify-content: space-between;
 
                     font-size: .75rem;
                     
                     background-color: rgba(var(--highlight), var(--low-opacity));
                 }
 
-                #legend h4, #legend li {
-                    color: rgba(var(--highlight), var(--high-opacity));
+                #legend h4 {
+                    flex-grow: 2; /* Push legend skills to the end */
                 }
 
                 #legend .emoji{
@@ -289,27 +294,27 @@
                 /* Proficiency classes */
                 /* * * * * * * * * * * */
 
-                .proficient{
+                [level="proficient"]{
                     background-color: var(--proficiency-proficient);
                 }
 
-                .good{
+                [level="good"]{
                     background-color: var(--proficiency-good);
                 }
 
-                .average{
+                [level="average"]{
                     background-color: var(--proficiency-average);
                 }
 
-                .belowaverage{
+                [level="belowaverage"]{
                     background-color: var(--proficiency-belowaverage);
                 }
 
-                .accquainted{
+                [level="accquainted"]{
                     background-color: var(--proficiency-accquainted);
                 }
 
-                .learning{
+                [level="learning"]{
                     background-color: var(--proficiency-learning);
                 }
             </style>
@@ -319,61 +324,61 @@
                 <section class="category-container">
                     <h4><span class="emoji">🐵</span> Human readable</h4>
                     <ul class="skill-list">
-                        <li class="proficient">🇸🇪 Swedish</li>
-                        <li class="proficient">🇬🇧 English</li>
+                        <li level="proficient">🇸🇪 Swedish</li>
+                        <li level="proficient">🇬🇧 English</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">📦</span> Object oriented</h4>
                     <ul class="skill-list">
-                        <li class="proficient">☕ Java</li>
-                        <li class="proficient">❤️ Scala</li>
-                        <li class="learning">#️⃣ C#</li>
+                        <li level="proficient">☕ Java</li>
+                        <li level="proficient">❤️ Scala</li>
+                        <li level="learning">#️⃣ C#</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">🌐</span> Web development</h4>
                     <ul class="skill-list">
-                        <li class="proficient">🖥️ HTML</li>
-                        <li class="proficient">👔 CSS</li>
-                        <li class="good">🤖 JavaScript</li>
-                        <li class="good">#️⃣ TypeScript</li>
+                        <li level="proficient">🖥️ HTML</li>
+                        <li level="proficient">👔 CSS</li>
+                        <li level="good">🤖 JavaScript</li>
+                        <li level="good">#️⃣ TypeScript</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">✏️</span> Writing</h4>
                     <ul class="skill-list">
-                        <li class="proficient">📝 Markdown</li>
-                        <li class="average">📄 LaTeX</li>
+                        <li level="proficient">📝 Markdown</li>
+                        <li level="average">📄 LaTeX</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">➕</span> Math/Functional</h4>
                     <ul class="skill-list">
-                        <li class="good">✖️ KaTeX</li>
-                        <li class="average">🔗 Haskell</li>
-                        <li class="belowaverage">🟰 R</li>
-                        <li class="belowaverage">🐍 Python</li>
-                        <li class="accquainted">🤯 Clojure</li>
+                        <li level="good">✖️ KaTeX</li>
+                        <li level="average">🔗 Haskell</li>
+                        <li level="belowaverage">🟰 R</li>
+                        <li level="belowaverage">🐍 Python</li>
+                        <li level="accquainted">🤯 Clojure</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">🔧</span> Other</h4>
                     <ul class="skill-list">
-                        <li class="accquainted">💲 Shell scripting</li>
-                        <li class="accquainted">🔩 RISC-V Assembly</li>
-                        <li class="accquainted">🦀 Rust</li>
+                        <li level="accquainted">💲 Shell scripting</li>
+                        <li level="accquainted">🔩 RISC-V Assembly</li>
+                        <li level="accquainted">🦀 Rust</li>
                     </ul>
                 </section>
                 <section class="category-container" id="legend">
                     <h4><span class="emoji">🗺️</span> Legend</h4>
                     <ul class="skill-list">
-                        <li class="proficient">💪 Proficient</li>
-                        <li class="good">👍 Good</li>
-                        <li class="average">👌 Average</li>
-                        <li class="belowaverage">🤏 Below average</li>
-                        <li class="accquainted">💡 Accquainted</li>
-                        <li class="learning">🧠 Learning</li>
+                        <li level="proficient">💪 Proficient</li>
+                        <li level="good">👍 Good</li>
+                        <li level="average">👌 Average</li>
+                        <li level="belowaverage">🤏 Below average</li>
+                        <li level="accquainted">💡 Accquainted</li>
+                        <li level="learning">🧠 Learning</li>
                     </ul>
                 </section>
             </figure>
