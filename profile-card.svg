@@ -94,9 +94,10 @@
                 }
 
                 /* The inner text */
-                #typewriter p{                
+                #typewriter-container p{
+                    display: inline-block;
                     width: 1ch;
-
+                    margin-left: .1em;
                     border-bottom: solid .2em var(--text-color-negative);
                     animation: .75s blink-caret 1s step-end infinite;
                 }
@@ -320,7 +321,7 @@
             </style>
 
             <figure id="language-card">
-                <h3>💬 <span id="typewriter"></span><p></p></h3>
+                <h3 id="typewriter-container">💬 <span id="typewriter"></span><p></p></h3>
                 <section class="category-container">
                     <h4><span class="emoji">🐵</span> Human readable</h4>
                     <ul class="skill-list">
