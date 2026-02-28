@@ -332,54 +332,54 @@
                 <section class="category-container">
                     <h4><span class="emoji">📦</span> Object oriented</h4>
                     <ul class="skill-list">
-                        <li level="proficient">☕ Java</li>
-                        <li level="proficient">❤️ Scala</li>
-                        <li level="learning">#️⃣ C#</li>
+                        <li level="proficient">Java</li>
+                        <li level="proficient">Scala</li>
+                        <li level="average">C#</li>
+                        <li level="learning">C++</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">🌐</span> Web development</h4>
                     <ul class="skill-list">
-                        <li level="proficient">🖥️ HTML</li>
-                        <li level="proficient">👔 CSS</li>
-                        <li level="good">🤖 JavaScript</li>
-                        <li level="good">#️⃣ TypeScript</li>
+                        <li level="proficient">HTML</li>
+                        <li level="proficient">CSS</li>
+                        <li level="good">JavaScript</li>
+                        <li level="good">TypeScript</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">✏️</span> Writing</h4>
                     <ul class="skill-list">
-                        <li level="proficient">📝 Markdown</li>
-                        <li level="average">📄 LaTeX</li>
+                        <li level="proficient">Markdown</li>
+                        <li level="average">LaTeX</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">➕</span> Math/Functional</h4>
                     <ul class="skill-list">
-                        <li level="good">✖️ KaTeX</li>
-                        <li level="average">🔗 Haskell</li>
-                        <li level="belowaverage">🟰 R</li>
-                        <li level="belowaverage">🐍 Python</li>
-                        <li level="accquainted">🤯 Clojure</li>
+                        <li level="average">Haskell</li>
+                        <li level="belowaverage">R</li>
+                        <li level="belowaverage">Python</li>
+                        <li level="accquainted">Clojure</li>
                     </ul>
                 </section>
                 <section class="category-container">
                     <h4><span class="emoji">🔧</span> Other</h4>
                     <ul class="skill-list">
-                        <li level="accquainted">💲 Shell scripting</li>
-                        <li level="accquainted">🔩 RISC-V Assembly</li>
-                        <li level="accquainted">🦀 Rust</li>
+                        <li level="accquainted">Shell scripting</li>
+                        <li level="accquainted">RISC-V Assembly</li>
+                        <li level="accquainted">Rust</li>
                     </ul>
                 </section>
                 <section class="category-container" id="legend">
                     <h4><span class="emoji">🗺️</span> Legend</h4>
                     <ul class="skill-list">
-                        <li level="proficient">💪 Proficient</li>
-                        <li level="good">👍 Good</li>
-                        <li level="average">👌 Average</li>
-                        <li level="belowaverage">🤏 Below average</li>
-                        <li level="accquainted">💡 Accquainted</li>
-                        <li level="learning">🧠 Learning</li>
+                        <li level="proficient">Proficient</li>
+                        <li level="good">Good</li>
+                        <li level="average">Average</li>
+                        <li level="belowaverage">Below average</li>
+                        <li level="accquainted">Accquainted</li>
+                        <li level="learning">Learning</li>
                     </ul>
                 </section>
             </figure>
